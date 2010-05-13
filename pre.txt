@@ -1,0 +1,221 @@
+.. -*- mode: rst -*-
+
+.. include:: <s5defs.txt>
+
+========================
+python en el laboratorio
+========================
+
+------------------------------------------------------------------------------------
+¿`python`:orange: `vs`:huge: `awk + bash + gnuplot + matlab + Fortran/C/C++`:green:?
+------------------------------------------------------------------------------------
+
+.. image:: images/logo.png
+    :align: center
+
+\
+==
+
+|
+|
+|
+
+.. sourcecode:: python
+
+    print 'hello world'
+
+\
+==
+
+|
+|
+|
+
+.. sourcecode:: python
+
+    print 'hello world'
+
+.. sourcecode:: bash
+
+    $ python hello.py
+
+\
+==
+
+|
+|
+|
+
+.. sourcecode:: python
+
+    #! /usr/bin/env python
+
+    print 'hello world'
+
+\
+==
+
+|
+|
+|
+
+.. sourcecode:: python
+
+    #! /usr/bin/env python
+
+    print 'hello world'
+
+.. sourcecode:: bash
+
+    $ chmod +x hello.py
+    $ ./hello.py
+
+\
+==
+
+.. class:: center
+
+    |
+    |
+    |
+
+    `¿por qué python?`:huge:
+
+    .. sourcecode:: python
+
+\
+=====================
+
+.. class:: center
+
+    `editar >> compilar >> ejecutar >> editar`:green:
+
+    `VS`:huge:
+
+    `editar >> ejecutar >> editar`:orange:
+
+
+
+test
+====
+
+
+
+pseudo código
+==============
+
+.. class:: handout
+
+    El código se lee mas de lo que se escribe
+
+.. sourcecode:: pseudocode
+
+    E = 0
+    para cada partícula i en la simulación
+        E = E + V_i^2
+
+C
+===================
+
+.. .. sourcecode:: pseudocode
+
+..    E = 0
+..    para cada partícula i en la simulación
+..        E = E + V_i^2
+
+.. sourcecode:: c
+
+    int energy = 0;
+    int i;
+    for(i=0; i<n; i++)
+    {
+        double vx = particles[i].v[0];
+        double vy = particles[i].v[1];
+        double vz = particles[i].v[2];
+        energy += vx^2 + vy^2 + vz**2;
+    }
+
+python
+========================
+
+.. .. sourcecode:: pseudocode
+
+..    E = 0
+..    para cada partícula i en la simulación
+..        E = E + V_i^2
+
+.. sourcecode:: python
+
+    energy = 0
+    for i in range(n):
+        vx = particles[i].v[0]
+        vy = particles[i].v[1]
+        vz = particles[i].v[2]
+        energy += vx**2 + vy**2 + vz**2
+
+python
+======================
+
+.. .. sourcecode:: pseudocode
+
+..    E = 0
+..    para cada partícula i en la simulación
+..        E = E + V_i^2
+
+.. sourcecode:: python
+
+    energy = 0
+    for particle in particles:
+        vx, vy, vz = particle.v
+        energy += vx**2 + vy**2 + vz**2
+
+baterias incluidas
+==================
+
+
+baterias incluidas 2.0
+======================
+
+baterias incluidas 2.0
+======================
+
+ipython
+-------
+
+.. image:: images/ipython.png
+    :align: center
+
+
+baterias incluidas 2.0
+======================
+
+scypy/numpy
+-----------
+
+baterias incluidas 2.0
+======================
+
+matplotlib
+----------
+
+
+acelerando python
+=================
+
+
+SWIG - bost.python
+==================
+
+
+weave - instant
+===============
+
+
+f2py
+====
+
+
+cython
+======
+
+
