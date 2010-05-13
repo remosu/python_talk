@@ -13,91 +13,31 @@ python en el laboratorio
 .. image:: images/logo.png
     :align: center
 
-\
-==
-
-|
-|
-|
-
-.. sourcecode:: python
-
-    print 'hello world'
-
-\
-==
-
-|
-|
-|
-
-.. sourcecode:: python
-
-    print 'hello world'
-
-.. sourcecode:: bash
-
-    $ python hello.py
-
-\
-==
-
-|
-|
-|
-
-.. sourcecode:: python
-
-    #! /usr/bin/env python
-
-    print 'hello world'
-
-\
-==
-
-|
-|
-|
-
-.. sourcecode:: python
-
-    #! /usr/bin/env python
-
-    print 'hello world'
-
-.. sourcecode:: bash
-
-    $ chmod +x hello.py
-    $ ./hello.py
 
 \
 ==
 
 .. class:: center
 
-    |
-    |
-    |
+    `awk bash perl gnuplot matlab matemathica Fortran C/C++`:green:
 
     `¿por qué python?`:huge:
 
-    .. sourcecode:: python
 
 \
-=====================
+==
 
-.. class:: center
-
-    `editar >> compilar >> ejecutar >> editar`:green:
-
-    `VS`:huge:
-
-    `editar >> ejecutar >> editar`:orange:
+.. image:: images/googleit.png
+    :align: center
 
 
+python es fácil de aprender
+===========================
 
-test
-====
+* sintaxis clara
+* compacto
+* pocas reglas
+* ... y pocas excepciones
 
 
 
@@ -117,57 +57,74 @@ pseudo código
 C
 ===================
 
-.. .. sourcecode:: pseudocode
-
-..    E = 0
-..    para cada partícula i en la simulación
-..        E = E + V_i^2
-
 .. sourcecode:: c
 
     int energy = 0;
     int i;
     for(i=0; i<n; i++)
     {
-        double vx = particles[i].v[0];
-        double vy = particles[i].v[1];
-        double vz = particles[i].v[2];
-        energy += vx^2 + vy^2 + vz**2;
+        double vx = velocities[i][0];
+        double vy = velocities[i][1];
+        double vz = velocities[i][2];
+        energy += vx*vx + vy*vy + vz*vz;
     }
 
 python
 ========================
 
-.. .. sourcecode:: pseudocode
-
-..    E = 0
-..    para cada partícula i en la simulación
-..        E = E + V_i^2
-
 .. sourcecode:: python
 
     energy = 0
     for i in range(n):
-        vx = particles[i].v[0]
-        vy = particles[i].v[1]
-        vz = particles[i].v[2]
+        vx = velocities[i].v[0]
+        vy = velocities[i].v[1]
+        vz = velocities[i].v[2]
         energy += vx**2 + vy**2 + vz**2
 
 python
 ======================
 
-.. .. sourcecode:: pseudocode
+.. sourcecode:: python
 
-..    E = 0
-..    para cada partícula i en la simulación
-..        E = E + V_i^2
+    energy = 0
+    for velocity in velocities:
+        vx = velocity[0]
+        vy = velocity[1]
+        vz = velocity[2]
+        energy += vx**2 + vy**2 + vz**2
+
+python
+======================
 
 .. sourcecode:: python
 
     energy = 0
-    for particle in particles:
-        vx, vy, vz = particle.v
+    for velocity in velocities:
+        vx, vy, vz = velocity[i]
         energy += vx**2 + vy**2 + vz**2
+
+python
+======================
+
+.. sourcecode:: python
+
+    energy = 0
+    for vx, vy, vz in velocities:
+        energy += vx**2 + vy**2 + vz**2
+
+
+ágil
+====
+
+.. class:: center
+
+    `editar >> compilar >> ejecutar >> editar`:green:
+
+    `VS`:huge:
+
+    `editar >> ejecutar >> editar`:orange:
+
+
 
 baterias incluidas
 ==================
