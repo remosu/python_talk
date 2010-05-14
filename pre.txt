@@ -113,7 +113,7 @@ python
         energy += vx**2 + vy**2 + vz**2
 
 
-ágil
+\
 ====
 
 .. class:: center
@@ -124,6 +124,50 @@ python
 
     `editar >> ejecutar >> editar`:orange:
 
+\ 
+==
+
+.. class:: center
+
+    |
+    |
+
+    `interprete interectivo`:huge:
+
+
+orientado a objetos
+===================
+
+.. sourcecode:: python
+
+    class Perro:
+
+        def __init__(self, nombre):
+            self.nombre = nombre
+
+	def come(self, comida):
+            print self.name + ' come ' + comida
+
+.. sourcecode:: python
+
+    >>> perrito = Perro('Scooby')
+    >>> perrito.come('hueso')
+    Scooby come hueso
+
+
+multiparadigma
+==============
+
+.. image:: images/franky.jpg
+    :align: center
+
+
+multiparadigma
+==============
+
+.. image:: images/Reedr.jpg
+    :align: center
+
 
 
 baterias incluidas
@@ -133,27 +177,33 @@ baterias incluidas
 baterias incluidas 2.0
 ======================
 
-baterias incluidas 2.0
-======================
+.. class:: center
 
-ipython
--------
-
-.. image:: images/ipython.png
-    :align: center
+    ipython numpy matplotlib
 
 
 baterias incluidas 2.0
 ======================
 
-scypy/numpy
------------
+.. class:: center
+
+    `ipython`:huge: `numpy matplotlib`:tiny:
+
 
 baterias incluidas 2.0
 ======================
 
-matplotlib
-----------
+.. class:: center
+
+    `ipython`:tiny: `numpy`:huge: `matplotlib`:tiny:
+
+
+baterias incluidas 2.0
+======================
+
+.. class:: center
+
+    `ipython numpy`:tiny: `matplotlib`:huge:
 
 
 acelerando python
